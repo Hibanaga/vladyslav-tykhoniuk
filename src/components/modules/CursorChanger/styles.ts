@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Styled = styled.main.attrs((props) => ({
+const Styled = styled.div.attrs((props) => ({
     style: {
         width: `${props.$size}px`,
         height: `${props.$size}px`,

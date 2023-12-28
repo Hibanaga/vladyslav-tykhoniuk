@@ -20,6 +20,16 @@ a {
   text-decoration: none;
 }
 
+::-moz-selection {
+  color: rgb(19 78 74);
+  background: rgb(94 234 212);
+}
+
+::selection {
+  color: rgb(19 78 74);
+  background: rgb(94 234 212);
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
