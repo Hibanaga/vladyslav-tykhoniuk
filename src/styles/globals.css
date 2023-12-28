@@ -9,10 +9,10 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   margin: 0;
-}
 
-body {
+  color: #FFF;
   background-color: #0F172A;
+  font-size: 19px;
 }
 
 a {
@@ -30,8 +30,44 @@ a {
   background: rgb(94 234 212);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media (max-width: 2560px) {
+  html, body {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 1440px) {
+  html, body {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html, body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  html, body {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  html, body {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 375px) {
+  html, body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  html, body {
+    font-size: 11px;
   }
 }

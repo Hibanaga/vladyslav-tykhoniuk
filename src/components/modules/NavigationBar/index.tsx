@@ -14,13 +14,14 @@ const ModuleNavigationBar: FC<Props> = ({ }) => {
 
             <ul className='nav-list'>
                 <li className='nav-item'>
-                    <a href="/">about</a>
+                    <span className='line' />
+                    <a href="/" className='link'>about</a>
                 </li>
                 <li className='nav-item'>
-                    <a href="/">experience</a>
+                    <a href="/" className='link'>experience</a>
                 </li>
                 <li className='nav-item'>
-                    <a href="/">projects</a>
+                    <a href="/" className='link'>projects</a>
                 </li>
             </ul>
         </StyledComponent>

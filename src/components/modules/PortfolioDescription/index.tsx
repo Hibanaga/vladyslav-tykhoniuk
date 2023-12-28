@@ -10,13 +10,9 @@ interface Props {
 const ModulePortfolioDescription: FC<Props> = ({ }) => {
     return (
         <StyledComponent>
-            <span>
-                Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I’ve had the privilege of building software for an advertising agency, a start-up, a student-led design studio, and a huge corporation.
-
-                My main focus these days is building products and leading projects for our clients at Upstatement. In my free time I've also released an online video course that covers everything you need to know to build a web app with the Spotify API.
-
-                When I’m not at the computer, I’m usually rock climbing, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds
-            </span>
+            <span className='content'>Experienced JavaScript developer with a strong base in JS, with experience in using JS for front-end and back-end development, as well as experience in using PHP in development.</span>
+            <span className='content'>I have experience in implementing tasks of various levels of complexity, as well as extensive experience in cooperation with other developers.</span>
+            <span className='content'>Open to new concepts and technologies, and able to learn new things quickly. An open-minded person who can always help and support colleagues.</span>
         </StyledComponent>
     );
 };
