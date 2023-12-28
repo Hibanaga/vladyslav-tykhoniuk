@@ -10,7 +10,11 @@ const ModuleContentSection: FC<Props> = ({ }) => {
     return (
         <StyledComponent className='module-content-section'>
             <PortfolioDescription />
-            <List />
+            <PortfolioDescription />
+            <PortfolioDescription />
+            <PortfolioDescription />
+            <PortfolioDescription />
+            {/*<List />*/}
         </StyledComponent>
     );
 };

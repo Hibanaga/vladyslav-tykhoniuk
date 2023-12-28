@@ -1,3 +1,5 @@
+'use client'
+
 import React, { FC } from 'react';
 
 import StyledComponent from './styles';
@@ -5,23 +7,26 @@ import StyledComponent from './styles';
 interface Props {}
 
 const ModuleNavigationBar: FC<Props> = ({ }) => {
+    const onClick = (e) => {
+        e?.preventDefault();
+    }
+
     return (
         <StyledComponent className='module-navigation-bar'>
-            <h1 className='headline'>Tykhoniuk Vladyslav</h1>
+            <a href="/" className='headline'>Tykhoniuk Vladyslav</a>
             <h3 className='sub-headline'>Full-stack developer</h3>
 
             <span className='additional'>I build exceptional and accessible digital experiences for the web.</span>
 
             <ul className='nav-list'>
                 <li className='nav-item'>
-                    <span className='line' />
-                    <a href="/" className='link'>about</a>
+                    <a href="about:blank" className='link' onClick={onClick}>about</a>
                 </li>
                 <li className='nav-item'>
-                    <a href="/" className='link'>experience</a>
+                    <a href="about:blank" className='link' onClick={onClick}>experience</a>
                 </li>
                 <li className='nav-item'>
-                    <a href="/" className='link'>projects</a>
+                    <a href="about:blank" className='link' onClick={onClick}>projects</a>
                 </li>
             </ul>
         </StyledComponent>

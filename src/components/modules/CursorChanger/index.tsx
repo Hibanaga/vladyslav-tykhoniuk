@@ -8,7 +8,7 @@ interface Props {
    circleWidth?: number
 }
 
-const ModuleCursorColorChanger: FC<Props> = ({ circleWidth = 600 }) => {
+const ModuleCursorColorChanger: FC<Props> = ({ circleWidth = 1000 }) => {
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
     const handleMouseMove = (e) => setCursorPosition({ x: e.clientX - circleWidth / 2, y: e.clientY - circleWidth / 2 })

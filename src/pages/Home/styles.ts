@@ -3,8 +3,10 @@
 import styled from "styled-components";
 
 export default styled.main`
-    margin: 2em 0;
+    margin: 0;
     padding: 0;
+    height: 100%;
+    position: relative;
     
     .container {
         display: grid;
