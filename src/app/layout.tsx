@@ -8,7 +8,7 @@ import '@/styles/globals.css';
 export const metadata: Metadata = {
   title: 'Vladyslav Tykhoniuk',
   description: 'Full-stack developer',
-  keywords: ['Next.js', 'React', 'Full-stack', 'Developer'],
+  keywords: ['Next.js', 'React', 'Full-stack', 'Developer', 'Vladyslav', 'Tykhoniuk', 'Vladyslav Tykhoniuk'],
 }
 
 export default function RootLayout({

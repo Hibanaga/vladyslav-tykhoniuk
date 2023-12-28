@@ -1,12 +1,11 @@
 import StyledComponent from './styles';
 
-function Home() {
+import CursorChanger from '@/modules/CursorChanger';
 
+function Home() {
     return (
         <StyledComponent>
-            <h1>
-                tk
-            </h1>
+            <CursorChanger />
         </StyledComponent>
     )
 }
