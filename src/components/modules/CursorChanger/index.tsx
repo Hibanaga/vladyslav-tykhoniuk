@@ -1,30 +1,27 @@
 'use client'
 
-import React, { useState, useEffect, FC } from 'react';
+import React, { FC } from 'react';
 
 import StyledComponent from './styles';
+
+import { useMousePosition } from '@/utils/cursor';
 
 interface Props {
    circleWidth?: number
 }
 
 const ModuleCursorColorChanger: FC<Props> = ({ circleWidth = 1000 }) => {
-    const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-
-    const handleMouseMove = (e) => setCursorPosition({ x: e.clientX - circleWidth / 2, y: e.clientY - circleWidth / 2 })
-
-    useEffect(() => {
-        document.addEventListener('mousemove', handleMouseMove);
-        return () => document.removeEventListener('mousemove', handleMouseMove);
-    }, []);
+    const { clientX, clientY } = useMousePosition();
 
     return (
-        <StyledComponent
-            className='module-cursor-color-changer'
-            $size={circleWidth}
-            $top={cursorPosition.y}
-            $left={cursorPosition.x}
-        />
+        <StyledComponent className='module-cursor-color-changer'>
+            <div className='cursor-above-effect' style={{
+                height: circleWidth,
+                width: circleWidth,
+                top: clientY - circleWidth / 2,
+                left: clientX - circleWidth / 2,
+            }} />
+        </StyledComponent>
     );
 };
 

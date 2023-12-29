@@ -25,10 +25,12 @@ export default function RootLayout({
   children: ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
-      </body>
-    </html>
+      <StyledComponentsRegistry>
+        <html lang="en">
+          <body className={inter.className}>
+           {children}
+          </body>
+        </html>
+      </StyledComponentsRegistry>
   )
 }

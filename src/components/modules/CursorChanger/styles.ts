@@ -1,18 +1,19 @@
 import styled from 'styled-components';
 
-const Styled = styled.div.attrs((props) => ({
-    style: {
-        width: `${props.$size}px`,
-        height: `${props.$size}px`,
-        left: `${props.$left}px`,
-        top: `${props.$top}px`,
-    },
-}))`
-    position: absolute;
-    border-radius: 50%;
+export default styled.div`
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
     pointer-events: none;
-    background: radial-gradient(circle closest-side, #1D4ED8, transparent);
-    opacity: .15;
-`;
-
-export default Styled;
+    
+    .cursor-above-effect {
+        position: absolute;
+        border-radius: 50%;
+        pointer-events: none;
+        background: radial-gradient(circle closest-side, #1D4ED8, transparent);
+        opacity: .15;
+    }
+`
